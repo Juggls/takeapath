@@ -8,8 +8,7 @@ class Solution(object):
         :rtype: List[int]
         """
         freq = {}
-        freq_list=[]
-        
+        freq_list=[]  
         for num in nums:
             if num in freq:
                 freq[num] = freq[num] + 1
@@ -20,13 +19,7 @@ class Solution(object):
            
             freq_list.append((-freq[key], key))
         heapq.heapify(freq_list)
-       
-      
         topk = []
         for i in range(0,k):
             topk.append(heapq.heappop(freq_list)[1])
-        
-        
-                
-                
         return topk
