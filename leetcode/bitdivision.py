@@ -14,5 +14,4 @@ class Solution:
         if not positive:
             res = -res
         return min(max(-2147483648, res), 2147483647)
-                
             

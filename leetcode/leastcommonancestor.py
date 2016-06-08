@@ -19,7 +19,7 @@ class Solution(object):
             return True
         
         return False
-            
+        
     def lowestCommonAncestor(self, root, p, q):
         """
         :type root: TreeNode
@@ -58,4 +58,5 @@ class Solution(object):
                 lca = lca.right
         
         return lca
+
    
