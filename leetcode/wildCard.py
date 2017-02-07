@@ -1,7 +1,6 @@
 #1pass python from yuCODING
 
 class Solution:
-    
     def isMatch(self, s, p):
         s_cur = 0;
         p_cur= 0;

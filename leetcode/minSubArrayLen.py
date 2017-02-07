@@ -10,7 +10,6 @@ class Solution(object):
         if nums == None or len(nums) == 0 or sum(nums) < s:
             return 0
         
-        
         minlength = 1
         start = 0
         end = 0
@@ -28,7 +27,6 @@ class Solution(object):
         currlength = minlength
         currstart = end - minlength + 1
         
-
         while end < len(nums):
             summy -= nums[currstart]
             while(summy < s):
@@ -39,7 +37,6 @@ class Solution(object):
                 
                 summy += nums[end]
                 currlength += 1
-                print currlength
                 
             currstart +=1
             currlength -= 1 
