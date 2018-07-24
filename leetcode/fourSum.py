@@ -9,7 +9,6 @@ def fourSum(nums, target):
     
     quads = set()
     
-
     for i in xrange(len(nums)):
         for j in xrange(i + 1, len(nums)):
             curr_sum = nums[i] + nums[j]
