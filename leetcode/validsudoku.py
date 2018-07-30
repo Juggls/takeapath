@@ -40,8 +40,6 @@ class Solution:
 
                 flattened_tile = [int(x) for x in flattened_tile if x != "."]
                 if self.check_array(flattened_tile) == False:
-                    print("swag")
-                    print(flattened_tile)
                     return False
 
         return True
